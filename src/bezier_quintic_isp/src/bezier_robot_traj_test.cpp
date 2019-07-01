@@ -53,7 +53,8 @@ int main(int argc, char **argv)
 
 
     // initiate bezier robot trajectory
-    bezier_robot_trajectory rbt_traj(Pos_jt_wpt);//, Vel_jt_wpt, ACC_jt_wpt, durations[0], t_start );
+    bezier_robot_trajectory rbt_traj(Pos_jt_wpt); // if you have only a path without time/velor acc
+//    bezier_robot_trajectory rbt_traj(Pos_jt_wpt, Vel_jt_wpt, ACC_jt_wpt, durations[0], t_start );
     sync_times = rbt_traj.update_waypoints_times(max_pos, max_vel, max_acc, max_jrk);
     //update timefor each trajectory and then compute synchronized times
     rbt_traj.compute_durations_from_times( sync_times, sync_durations);

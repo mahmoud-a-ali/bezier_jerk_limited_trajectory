@@ -1,7 +1,7 @@
 #include <ros/ros.h>
 #include "bezier_quintic_segment.h"
-#include<normal_toppra_traj_instant_1.h>
-//#include<normal_toppra_traj_instant_3.h>
+//#include<normal_toppra_traj_instant_1.h>
+#include<normal_toppra_traj_instant_3.h>
 
 #include <python2.7/Python.h>
 #include "matplotlibcpp.h"

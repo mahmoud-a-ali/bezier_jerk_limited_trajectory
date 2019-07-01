@@ -60,7 +60,8 @@ int main(int argc, char **argv)
 
 
         // initiate bezier_trajectory
-        bezier_trajectory traj(P_jt_wpt[jt], V_jt_wpt[jt], A_jt_wpt[jt], durations[jt], t_start );
+        bezier_trajectory traj(P_jt_wpt[jt]); // just waypoint without vel, acc
+//        bezier_trajectory traj(P_jt_wpt[jt], V_jt_wpt[jt], A_jt_wpt[jt], durations[jt], t_start );
         T_jt_wpt[jt] =traj.update_waypoints_times(max_pos, max_vel, max_acc, max_jrk);
         traj.print_attributes();
         // using sample function to sample trajectory
