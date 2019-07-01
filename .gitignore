@@ -1,0 +1,8 @@
+.catkin_tools
+*.workspace
+*.workspace*
+build
+devel
+logs
+install
+
